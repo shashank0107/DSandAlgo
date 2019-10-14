@@ -5,8 +5,7 @@ vector<vector<int> > comps;
 vector<int> adj[N];
 
 void pre() {
-    comps.clear();
-    ndfn = 0;
+    comps.clear(), ndfn = 0;
     LP(i,n+2) dfn[i] = -1, g[i].clear(), adj[i].clear();
 }
 void tarjan(int v) {
